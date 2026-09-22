@@ -8,7 +8,7 @@
     "technique": "Grafito",
     "year": 2026,
     "featured": true,
-    "publicId": "marioarte/works/retratos/retrato-grafito-001",
+    "publicId": "img_1",
     "alt": "Retrato realizado a lápiz sobre papel"
   },
   {
@@ -20,7 +20,7 @@
     "technique": "Lápiz de color",
     "year": 2026,
     "featured": false,
-    "publicId": "marioarte/works/retratos/retrato-femenino-001",
+    "publicId": "img_2",
     "alt": "Retrato artístico femenino"
   }
 ]

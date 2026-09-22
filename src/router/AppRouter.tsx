@@ -6,6 +6,7 @@ import {
 import { GalleryPage } from "../pages/GalleryPage";
 import { HomePage } from "../pages/HomePage";
 import MainLayout from "../shared/layouts/MainLayout";
+import { AboutPage } from "../pages/AboutPage";
 
 
 export function AppRouter() {
@@ -21,6 +22,11 @@ export function AppRouter() {
           <Route
             path="/galeria"
             element={<GalleryPage />}
+          />
+
+          <Route
+            path="/sobre-mi"
+            element={<AboutPage />}
           />
         </Route>
       </Routes>

@@ -6,7 +6,7 @@ export function GalleryPage() {
       <h1 className="mb-8 text-4xl font-bold">
         Galería
       </h1>
-
+sdasdsadas
       <Gallery onSelect={() => {}} />
     </section>
   );

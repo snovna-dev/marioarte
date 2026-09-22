@@ -17,7 +17,6 @@ export function GalleryCard({
       className="group overflow-hidden rounded-xl"
     >
       <img
-        src={getCloudinaryUrl(artwork.publicId, 800)}
         alt={artwork.alt}
         loading="lazy"
         className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"

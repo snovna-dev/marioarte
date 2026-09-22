@@ -1,0 +1,26 @@
+[
+  {
+    "id": "obra-001",
+    "title": "Retrato en grafito",
+    "slug": "retrato-en-grafito",
+    "description": "Retrato realizado completamente a mano.",
+    "category": "portrait",
+    "technique": "Grafito",
+    "year": 2026,
+    "featured": true,
+    "publicId": "marioarte/works/retratos/retrato-grafito-001",
+    "alt": "Retrato realizado a lápiz sobre papel"
+  },
+  {
+    "id": "obra-002",
+    "title": "Retrato femenino",
+    "slug": "retrato-femenino",
+    "description": "Estudio de retrato.",
+    "category": "portrait",
+    "technique": "Lápiz de color",
+    "year": 2026,
+    "featured": false,
+    "publicId": "marioarte/works/retratos/retrato-femenino-001",
+    "alt": "Retrato artístico femenino"
+  }
+]

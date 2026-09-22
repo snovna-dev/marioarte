@@ -1,0 +1,300 @@
+.contact-page {
+  background: #f7f5f1;
+  color: #1f1f1f;
+}
+
+.contact-hero {
+  position: relative;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(20, 20, 20, 0.94) 0%,
+      rgba(20, 20, 20, 0.78) 45%,
+      rgba(20, 20, 20, 0.35) 100%
+    ),
+    url("https://res.cloudinary.com/TU_CLOUD_NAME/image/upload/v1/marioarte/contact-hero.jpg")
+      center / cover;
+}
+
+.contact-hero-content {
+  position: relative;
+  z-index: 2;
+  width: min(1100px, 90%);
+  margin: 0 auto;
+  color: white;
+}
+
+.contact-eyebrow,
+.section-eyebrow {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.contact-hero-content h1 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: clamp(3.5rem, 7vw, 6rem);
+  line-height: 0.95;
+}
+
+.contact-hero-content p {
+  max-width: 580px;
+  margin: 24px 0 32px;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.contact-hero-button,
+.services-cta-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 13px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.contact-hero-button:hover,
+.services-cta-button:hover {
+  background: white;
+  color: #1f1f1f;
+}
+
+.contact-section {
+  padding: 100px 0;
+}
+
+.contact-container {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.artist-card {
+  position: sticky;
+  top: 30px;
+  padding: 32px;
+  background: white;
+  border: 1px solid #e7e2d9;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.07);
+}
+
+.artist-card-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 34px;
+}
+
+.artist-logo-wrapper {
+  flex-shrink: 0;
+}
+
+.artist-logo,
+.artist-logo-placeholder {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+.artist-logo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #222;
+  color: white;
+  font-family: Georgia, serif;
+  font-size: 2rem;
+}
+
+.artist-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.artist-card-header h2 {
+  margin: 4px 0;
+  font-family: Georgia, serif;
+}
+
+.artist-card-header p {
+  margin: 0;
+  color: #777;
+}
+
+.artist-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.artist-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #222;
+  text-decoration: none;
+}
+
+.contact-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #f1ede7;
+}
+
+.artist-contact-item small {
+  display: block;
+  margin-bottom: 3px;
+  color: #888;
+  font-size: 0.73rem;
+}
+
+.social-section {
+  margin-top: 32px;
+  padding-top: 28px;
+  border-top: 1px solid #ece8e0;
+}
+
+.social-section > span {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 0.82rem;
+  color: #777;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-3px);
+}
+
+.social-link.whatsapp {
+  background: #25d366;
+}
+
+.social-link.facebook {
+  background: #1877f2;
+}
+
+.social-link.instagram {
+  background: #e1306c;
+}
+
+.artist-biography {
+  padding-top: 8px;
+}
+
+.artist-biography h2 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+.artist-biography h2 span {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.biography-line {
+  width: 70px;
+  height: 3px;
+  margin: 22px 0 30px;
+  background: #1f1f1f;
+}
+
+.artist-biography p {
+  margin-bottom: 22px;
+  font-size: 1.08rem;
+  line-height: 1.9;
+  color: #555;
+}
+
+.artist-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 42px;
+}
+
+.artist-stats div {
+  padding: 20px;
+  border-top: 1px solid #ddd5ca;
+}
+
+.artist-stats strong {
+  display: block;
+  margin-bottom: 5px;
+  font-family: Georgia, serif;
+  font-size: 2rem;
+}
+
+.artist-stats span {
+  color: #777;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 850px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .artist-card {
+    position: static;
+  }
+
+  .artist-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-hero {
+    min-height: 460px;
+  }
+
+  .contact-section {
+    padding: 70px 0;
+  }
+
+  .artist-card {
+    padding: 24px;
+  }
+}

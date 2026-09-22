@@ -7,6 +7,8 @@ import { GalleryPage } from "../pages/GalleryPage";
 import { HomePage } from "../pages/HomePage";
 import MainLayout from "../shared/layouts/MainLayout";
 import { AboutPage } from "../pages/AboutPage";
+import ServicesPage from "../pages/ServicesPage";
+import ContactPage from "../pages/ContactPage";
 
 
 export function AppRouter() {
@@ -27,6 +29,16 @@ export function AppRouter() {
           <Route
             path="/sobre-mi"
             element={<AboutPage />}
+          />
+
+          <Route
+            path="/servicios"
+            element={<ServicesPage />}
+          />
+
+          <Route
+            path="/contacto"
+            element={<ContactPage />}
           />
         </Route>
       </Routes>

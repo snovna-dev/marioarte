@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Navigation() {
   return (
-    <nav className="fixed top-0 z-50 w-full bg-white shadow-sm">
+    <nav className="fixed top-0 left-0 z-50 w-full border-b bg-nav/65 text-foreground backdrop-blur">
 
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 
@@ -10,7 +10,7 @@ export default function Navigation() {
           to="/"
           className="text-xl font-bold"
         >
-          Mario Arte
+          Mario Suarez Art Studio
         </NavLink>
 
         <div className="flex items-center gap-6">
@@ -19,8 +19,8 @@ export default function Navigation() {
             to="/"
             className={({ isActive }) =>
               isActive
-                ? "font-semibold"
-                : "text-gray-600 hover:text-black"
+                ? "ffont-semibold text-nav-active"
+                : "text-nav-text/80 transition-colors hover:text-nav-active"
             }
           >
             Inicio
@@ -30,8 +30,8 @@ export default function Navigation() {
             to="/galeria"
             className={({ isActive }) =>
               isActive
-                ? "font-semibold"
-                : "text-gray-600 hover:text-black"
+                ? "ffont-semibold text-nav-active"
+                : "text-nav-text/80 transition-colors hover:text-nav-active"
             }
           >
             Galería
@@ -41,8 +41,8 @@ export default function Navigation() {
             to="/sobre-mi"
             className={({ isActive }) =>
               isActive
-                ? "font-semibold"
-                : "text-gray-600 hover:text-black"
+                ? "ffont-semibold text-nav-active"
+                : "text-nav-text/80 transition-colors hover:text-nav-active"
             }
           >
             Sobre mí
@@ -52,8 +52,8 @@ export default function Navigation() {
             to="/servicios"
             className={({ isActive }) =>
               isActive
-                ? "font-semibold"
-                : "text-gray-600 hover:text-black"
+                ? "ffont-semibold text-nav-active"
+                : "text-nav-text/80 transition-colors hover:text-nav-active"
             }
           >
             Servicios
@@ -63,8 +63,8 @@ export default function Navigation() {
             to="/contacto"
             className={({ isActive }) =>
               isActive
-                ? "font-semibold"
-                : "text-gray-600 hover:text-black"
+                ? "ffont-semibold text-nav-active"
+                : "text-nav-text/80 transition-colors hover:text-nav-active"
             }
           >
             Contacto

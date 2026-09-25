@@ -5,7 +5,7 @@ import { Services } from '../features/home/components/Services';
 export function HomePage() {
 
   return (
-    <div className="min-h-screen bg-gray-50 font-sans">
+    <div className="min-h-screen font-sans">
       <Home/>
       <Appreciations/>
       <Services/>

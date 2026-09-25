@@ -14,15 +14,9 @@ export function Info() {
                 <div className="artist-card">
                     <div className="artist-card-header">
                     <div className="artist-logo-wrapper">
-                        {logo ? (
-                        <img
-                            src={logo}
-                            alt="Logo MarioArte"
-                            className="artist-logo"
-                        />
-                        ) : (
+      
                         <div className="artist-logo-placeholder">M</div>
-                        )}
+                        
                     </div>
 
                     <div>

@@ -11,7 +11,7 @@ export function Services() {
     return (
         <>
             {/* Sección: Servicios */}
-            <section className="bg-gray-900 py-16 md:py-24">
+            <section className="bg-background py-16 md:py-24">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-16">
                     Servicios
@@ -33,8 +33,8 @@ export function Services() {
                         <h3 className="text-3xl font-bold text-white mb-4">{servicio.titulo}</h3>
                         <button
                             type="button"
-                            onClick={() => setModalAbierto(servicio.id)}
-                            className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2.5 px-6 rounded-lg transition-colors duration-300 backdrop-blur-sm"
+                            // onClick={() => setModalAbierto(servicio.id)}
+                            className="text-white font-semibold py-2.5 px-6 rounded-lg transition-colors duration-300 backdrop-blur-sm"
                         >
                             Ver más
                         </button>

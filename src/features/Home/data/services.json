@@ -1,0 +1,4 @@
+[
+    { "id": "esculturas", "titulo": "Esculturas", "imagenFondo": "portafolio/servicios/bg_1" },
+    { "id": "retratos", "titulo": "Retratos", "imagenFondo": "portafolio/servicios/bg_2" }
+]

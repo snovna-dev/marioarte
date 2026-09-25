@@ -4,6 +4,7 @@ import services from "../data/services.json";
 import { GalleryModal } from "../../../shared/components/GalleryModal";
 import type { Service } from "../types/Service";
 
+
 export function Services() {
     const [modalAbierto, setModalAbierto] = useState<Service['id'] | null>(null);
 

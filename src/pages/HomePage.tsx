@@ -1,6 +1,6 @@
-import { Home } from '../features/Home/components/Home';
-import { Appreciations } from '../features/Home/components/Appreciations';
-import { Services } from '../features/Home/components/Services';
+import { Home } from '../features/home/components/Home';
+import { Appreciations } from '../features/home/components/Appreciations';
+import { Services } from '../features/home/components/Services';
 
 export function HomePage() {
 

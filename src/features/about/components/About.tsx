@@ -1,3 +1,6 @@
+import { getCloudinaryUrl } from "../../../shared/services/cloudinary";
+import photos from "../data/photos.json";
+
 export function About() {
     return (
         <>
@@ -33,6 +36,7 @@ export function About() {
                 <div className="relative w-full h-full flex justify-center lg:justify-end">
                     <div className="relative rounded-2xl overflow-hidden shadow-2xl w-full max-w-lg group">
                     <img
+                        src={getCloudinaryUrl(photos.publicId, 800)}
                         alt="Retrato del artista Mario Suarez" 
                         className="w-full h-auto object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
                     />

@@ -8,7 +8,7 @@
     "technique": "Grafito",
     "year": 2026,
     "featured": true,
-    "publicId": "img_1",
+    "publicId": "portrait_7",
     "alt": "Retrato realizado a lápiz sobre papel"
   },
   {
@@ -20,7 +20,19 @@
     "technique": "Lápiz de color",
     "year": 2026,
     "featured": false,
-    "publicId": "img_2",
+    "publicId": "portrait_8",
+    "alt": "Retrato artístico femenino"
+  },
+  {
+    "id": "obra-002",
+    "title": "Retrato femenino",
+    "slug": "retrato-femenino",
+    "description": "Estudio de retrato.",
+    "category": "portrait",
+    "technique": "Lápiz de color",
+    "year": 2026,
+    "featured": false,
+    "publicId": "portrait_9",
     "alt": "Retrato artístico femenino"
   }
 ]

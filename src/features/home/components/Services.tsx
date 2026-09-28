@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { getCloudinaryUrl } from "../../gallery/services/cloudinary";
+import { getCloudinaryUrl } from "../../../shared/services/cloudinary";
 import services from "../data/services.json";
 import { GalleryModal } from "../../../shared/components/GalleryModal";
 import type { Service } from "../types/Service";

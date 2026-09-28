@@ -10,3 +10,9 @@ export function getCloudinaryUrl(
 
   return `https://res.cloudinary.com/${cloudName}/image/upload/${transformations}/${publicId}`;
 }
+
+export function getCloudinaryVideoUrl(
+  publicId: string
+): string {
+  return `https://res.cloudinary.com/${cloudName}/video/upload/f_auto,q_auto/${publicId}`;
+}

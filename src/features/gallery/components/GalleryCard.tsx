@@ -1,4 +1,4 @@
-import { getCloudinaryUrl } from "../services/cloudinary";
+import { getCloudinaryUrl } from "../../../shared/services/cloudinary";
 import type { Artwork } from "../types/artwork";
 
 

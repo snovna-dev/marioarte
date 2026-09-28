@@ -1,0 +1,46 @@
+[
+  {
+    "id": "martinez-pinky",
+    "titulo": "Sra. Martínez & Pinky",
+    "slug": "sra-martinez-pinky",
+    "descripcion": "Al conocer a la Sra. Martínez en un centro comercial, ella es la cabeza de una función en la cual ayuda a perritos en estado de abandono y callejeros; ese fue un evento organizado por la alcaldía de Ibagué. Fue la última rendición de cuentas del entonces alcalde Guillermo Alfonso Jaramillo. Ese dibujo fue un retrato de su mascota Pinky y fue un obsequio en agradecimiento por su labor en cuanto a la creación de espacios para nuestras mascotas en la ciudad.",
+    "category": "appreciations",
+    "technique": "Grafito",
+    "year": 2026,
+    "featured": true,
+    "images": [
+      {
+        "publicId": "appreciations_main",
+        "alt": "Retrato de la Sra. Martínez y Pinky"
+      },
+      {
+        "publicId": "appreciations_detail",
+        "alt": "Detalle del retrato de Pinky"
+      }
+    ]
+  },
+  {
+    "id": "amway",
+    "titulo": "Amway",
+    "slug": "amway",
+    "descripcion": "Al participar del negocio de Amway me di a conocer como artista y asistí a muchos eventos en los cuales mi boleto de entrada fueron los retratos de los oradores de cada evento. En este caso, los oradores de ese evento fueron Jerónimo Vásquez (Diamante de Amway) y Eliana Chacón (Esmeralda de Amway), ambos de Colombia. De esta forma mis obras viajaron a Sur, Centro y Norteamérica.",
+    "category": "appreciations",
+    "technique": "Grafito",
+    "year": 2026,
+    "featured": true,
+    "images": [
+      {
+        "publicId": "appreciations_portrait-1",
+        "alt": "Retrato de Jerónimo Vásquez realizado en grafito"
+      },
+      {
+        "publicId": "appreciations_portrait-2",
+        "alt": "Retrato de Eliana Chacón realizado en grafito"
+      },
+      {
+        "publicId": "appreciations_portrait-3",
+        "alt": "Retrato adicional realizado para un evento de Amway"
+      }
+    ]
+  }
+]

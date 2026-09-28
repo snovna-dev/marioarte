@@ -1,0 +1,4 @@
+[
+    { "id": "esculturas", "titulo": "Esculturas", "imagenFondo": "esculture_1" },
+    { "id": "retratos", "titulo": "Retratos", "imagenFondo": "picture_1" }
+]

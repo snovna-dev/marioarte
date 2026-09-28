@@ -1,13 +1,6 @@
-import { services } from "../data/services";
+import services from "../data/services.json";
+import type { Service } from "../types/Service";
 import ServiceCard from "./ServiceCard";
-
-export interface Service {
-    id: string;
-    title: string;
-    description: string;
-    image: string;
-    category: string;
-}
 
 interface GalleryProps {
     onViewService?: (service: Service) => void;

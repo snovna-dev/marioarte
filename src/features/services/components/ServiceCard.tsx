@@ -1,4 +1,6 @@
-import type { Service } from "../data/services";
+import { getCloudinaryUrl } from "../../../shared/services/cloudinary";
+import type { Service } from "../types/Service";
+
 
 interface ServiceCardProps {
   service: Service;
@@ -13,7 +15,7 @@ export default function ServiceCard({
     <article className="service-card">
       <div className="service-image-container">
         <img
-          src={service.image}
+          src={getCloudinaryUrl(service.publicId, 800)}
           alt={service.title}
           className="service-image"
           loading="lazy"

@@ -1,5 +1,7 @@
+import { fadeUp } from "../../../shared/animations/variants";
 import { getCloudinaryUrl } from "../../../shared/services/cloudinary";
 import photos from "../data/photos.json";
+import { motion } from "motion/react";
 
 export function About() {
     return (
@@ -11,39 +13,67 @@ export function About() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                 
                 {/* Columna de Texto */}
-                <div className="flex flex-col justify-center space-y-6">
+                <motion.article
+                    variants={fadeUp}
+                    whileHover={{
+                        y: -8,
+                        transition: {
+                        duration: 0.25,
+                        ease: "easeOut",
+                        },
+                    }}
+                    className="flex flex-col justify-center space-y-6"
+                >
                     <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">
-                    Mario Suarez
+                        Mario Suarez
                     </h2>
                     
                     {/* Elemento decorativo sutil */}
                     <div className="w-20 h-1.5 bg-indigo-600 rounded-full"></div>
                     
                     <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
-                    <p>
-                        Artista plástico nacido en Pitalito, Huila en julio de 1984. Autodidacta con 21 años de experiencia en dibujo, pintura y escultura. En su obra al carboncillo se destaca el retrato; en su pintura podemos observar un universo infinito compuesto de figuras orgánicas en una danza de colores vibrantes, en una narrativa acerca de la complejidad de la mente de su propio ser. 
-                    </p>
-                    <p>
-                        En su escultura se destaca la figura humana como elemento principal. Entre sus obras se encuentran monumentos públicos y obras en colecciones privadas.
-                    </p>
-                    <p className="font-medium text-gray-900">
-                        Su obra se encuentra en países como Estados Unidos, México, Argentina, Panamá, España y Londres.
-                    </p>
+                        <p>
+                            Artista plástico nacido en Pitalito, Huila en julio de 1984. Autodidacta con 21 años de experiencia en dibujo, pintura y escultura. En su obra al carboncillo se destaca el retrato; en su pintura podemos observar un universo infinito compuesto de figuras orgánicas en una danza de colores vibrantes, en una narrativa acerca de la complejidad de la mente de su propio ser. 
+                        </p>
+                        <p>
+                            En su escultura se destaca la figura humana como elemento principal. Entre sus obras se encuentran monumentos públicos y obras en colecciones privadas.
+                        </p>
+                        <p className="font-medium text-gray-900">
+                            Su obra se encuentra en países como Estados Unidos, México, Argentina, Panamá, España y Londres.
+                        </p>
                     </div>
-                </div>
+                </motion.article>
 
                 {/* Columna de Imagen */}
-                <div className="relative w-full h-full flex justify-center lg:justify-end">
+                <motion.article
+                    variants={fadeUp}
+                    whileHover={{
+                        y: -8,
+                        transition: {
+                        duration: 0.25,
+                        ease: "easeOut",
+                        },
+                    }}
+                    className="relative w-full h-full flex justify-center lg:justify-end"
+                >
                     <div className="relative rounded-2xl overflow-hidden shadow-2xl w-full max-w-lg group">
-                    <img
-                        src={getCloudinaryUrl(photos.publicId, 800)}
-                        alt="Retrato del artista Mario Suarez" 
-                        className="w-full h-auto object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-                    />
-                    {/* Overlay sutil para darle un toque más premium a la imagen */}
-                    <div className="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-2xl pointer-events-none"></div>
+                        <motion.img
+                            src={getCloudinaryUrl(photos.publicId, 800)}
+                            alt={photos.alt}
+                            loading="lazy"
+                            whileHover={{
+                                scale: 1.05,
+                            }}
+                            transition={{
+                                duration: 0.6,
+                                ease: "easeOut",
+                            }}
+                            className="w-full h-auto object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+                        />
+                        {/* Overlay sutil para darle un toque más premium a la imagen */}
+                        <div className="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-2xl pointer-events-none"></div>
                     </div>
-                </div>
+                </motion.article>
 
                 </div>
             </div>

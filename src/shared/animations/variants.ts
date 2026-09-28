@@ -1,5 +1,6 @@
 import type { Variants } from "motion/react";
 
+//variante que le da un aparicion de abajo hacia arriba
 export const fadeUp: Variants = {
   hidden: {
     opacity: 0,
@@ -15,6 +16,8 @@ export const fadeUp: Variants = {
   },
 };
 
+//variante que le permite a un componente padre que 
+// los componentes se muestren una después de otra.
 export const staggerContainer: Variants = {
   hidden: {},
   visible: {

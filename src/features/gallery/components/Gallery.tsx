@@ -45,7 +45,7 @@ export function Gallery({ onSelect }: GalleryProps) {
             rounded-2xl
             border
             border-[var(--border)]
-            bg-[var(--code-bg)]
+            bg-code-bg
             shadow-[0_8px_30px_rgba(0,0,0,0.08)]
             transition-shadow
             duration-300
@@ -61,7 +61,7 @@ export function Gallery({ onSelect }: GalleryProps) {
               z-10
               h-1
               w-0
-              bg-[var(--primary)]
+              bg-background
               transition-all
               duration-500
               group-hover:w-full

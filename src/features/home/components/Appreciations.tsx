@@ -61,7 +61,7 @@ export function Appreciations() {
 
         <div className="order-1 grid grid-cols-1 gap-4 sm:grid-cols-3 lg:order-2 lg:col-span-7">
 
-          {amway.images.map((image, index) => (
+          {amway.images.map((image) => (
             <img
               key={image.publicId}
               src={getCloudinaryUrl(image.publicId, 500)}

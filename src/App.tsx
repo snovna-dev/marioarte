@@ -1,7 +1,12 @@
 import { AppRouter } from "./router/AppRouter";
+import { MotionConfig } from "motion/react";
 
 function App() {
-  return <AppRouter />;
+  return (
+    <MotionConfig reducedMotion="user">
+      <AppRouter />
+    </MotionConfig>
+  );
 }
 
 export default App;

@@ -1,4 +1,5 @@
 import { getCloudinaryVideoUrl } from "../../../shared/services/cloudinary";
+import { motion } from "motion/react";
 
 export function Home() {
   const videoUrl = getCloudinaryVideoUrl(
@@ -29,14 +30,30 @@ export function Home() {
       {/* Contenido */}
       <div className="relative z-10 px-4 text-center text-white">
 
-        <h1 className="text-4xl font-extrabold tracking-tight md:text-5xl lg:text-6xl">
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 1,
+            ease: "easeOut",
+          }}
+          className="text-4xl font-extrabold md:text-6xl"
+        >
           Escultor, pintor y{" "}
           <span className="text-primary">
             amante del arte
           </span>
-        </h1>
+        </motion.h1>
 
-        <div className="mx-auto mt-4 h-1.5 w-24 rounded-full bg-primary" />
+        <motion.div
+          initial={{ opacity: 0, scaleX: 0 }}
+          animate={{ opacity: 1, scaleX: 1 }}
+          transition={{
+            duration: 0.8,
+            delay: 0.6,
+          }}
+          className="mx-auto mt-4 h-1.5 w-24 rounded-full bg-primary"
+        />
 
       </div>
 

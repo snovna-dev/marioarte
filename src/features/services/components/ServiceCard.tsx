@@ -6,13 +6,9 @@ import { fadeUp } from "../../../shared/animations/variants";
 
 interface ServiceCardProps {
   service: Service;
-  onViewMore?: (service: Service) => void;
 }
 
-export default function ServiceCard({
-  service,
-  onViewMore,
-}: ServiceCardProps) {
+export default function ServiceCard({ service }: ServiceCardProps) {
   return (
     <motion.article
       variants={fadeUp}
@@ -40,14 +36,10 @@ export default function ServiceCard({
 
         <p>{service.description}</p>
 
-        <button
-          type="button"
-          className="service-button"
-          onClick={() => onViewMore?.(service)}
-        >
+        <a href="/galeria" className="service-button" aria-label={`Ver obras de ${service.title}`}>
           Ver obras
           <span aria-hidden="true">→</span>
-        </button>
+        </a>
       </div>
     </motion.article>
   );

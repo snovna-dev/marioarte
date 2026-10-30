@@ -1,14 +1,9 @@
 import services from "../data/services.json";
-import type { Service } from "../types/Service";
 import ServiceCard from "./ServiceCard";
 import { motion } from "motion/react";
 import { fadeUp, staggerContainer } from "../../../shared/animations/variants";
 
-interface GalleryProps {
-    onViewService?: (service: Service) => void;
-}
-
-export function Service({ onViewService }: GalleryProps) {
+export function Service() {
     return (
         <>
             <motion.section variants={fadeUp} className="services-header">
@@ -53,7 +48,6 @@ export function Service({ onViewService }: GalleryProps) {
                     <ServiceCard
                         key={service.id}
                         service={service}
-                        onViewMore={onViewService}
                     />
                     ))}
                 </motion.div>

@@ -3,11 +3,17 @@ import { Gallery } from "../features/gallery/components/Gallery";
 import { motion } from "motion/react";
 import type { Artwork } from "../features/gallery/types/artwork";
 import { ArtworkModal } from "../features/gallery/components/ArtworkModal";
+import SEO from "../shared/components/SEO";
 
 export function GalleryPage() {
   const [selectedArtwork, setSelectedArtwork] = useState<Artwork | null>(null);
   return (
     <main className="min-h-screen bg-[var(--bg)] text-[var(--text-h)]">
+      <SEO
+        title="Galería de Arte de Mario Suarez | Obras y Retratos"
+        description="Explora obras de pintura, escultura y retratos al carboncillo creadas por Mario Suarez, artista plástico de Pitalito, Colombia."
+        path="/galeria"
+      />
       <section className="container mx-auto px-6 py-20 md:py-28">
         {/* Encabezado */}
         <div className="mx-auto mb-16 max-w-3xl text-center">

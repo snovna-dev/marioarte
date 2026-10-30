@@ -1,5 +1,5 @@
 import {
-  MemoryRouter,
+  BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -13,7 +13,7 @@ import ContactPage from "../pages/ContactPage";
 
 export function AppRouter() {
   return (
-    <MemoryRouter>
+    <BrowserRouter>
       <Routes>
         <Route element={<MainLayout />}>
           <Route
@@ -42,6 +42,6 @@ export function AppRouter() {
           />
         </Route>
       </Routes>
-    </MemoryRouter>
+    </BrowserRouter>
   );
 }

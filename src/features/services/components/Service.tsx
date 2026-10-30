@@ -1,6 +1,8 @@
 import services from "../data/services.json";
 import type { Service } from "../types/Service";
 import ServiceCard from "./ServiceCard";
+import { motion } from "motion/react";
+import { fadeUp, staggerContainer } from "../../../shared/animations/variants";
 
 interface GalleryProps {
     onViewService?: (service: Service) => void;
@@ -9,7 +11,7 @@ interface GalleryProps {
 export function Service({ onViewService }: GalleryProps) {
     return (
         <>
-            <section className="services-header">
+            <motion.section variants={fadeUp} className="services-header">
                 <div className="services-header-content">
                 <span className="services-eyebrow">MARIOARTE</span>
 
@@ -23,11 +25,14 @@ export function Service({ onViewService }: GalleryProps) {
                     escultura y retrato.
                 </p>
                 </div>
-            </section>
+            </motion.section>
 
-            <section className="services-section">
+            <motion.section
+                variants={staggerContainer}
+                className="services-section"
+            >
                 <div className="services-container">
-                <div className="services-introduction">
+                <motion.div variants={fadeUp} className="services-introduction">
                     <div>
                     <span className="section-eyebrow">DISCIPLINAS</span>
 
@@ -41,9 +46,9 @@ export function Service({ onViewService }: GalleryProps) {
                     Cada pieza nace de una búsqueda personal de expresión, explorando
                     formas, emociones, texturas y la figura humana.
                     </p>
-                </div>
+                </motion.div>
 
-                <div className="services-grid">
+                <motion.div variants={staggerContainer} className="services-grid">
                     {services.map((service) => (
                     <ServiceCard
                         key={service.id}
@@ -51,9 +56,9 @@ export function Service({ onViewService }: GalleryProps) {
                         onViewMore={onViewService}
                     />
                     ))}
+                </motion.div>
                 </div>
-                </div>
-            </section>
+            </motion.section>
         </>
     );
 }

@@ -1,5 +1,7 @@
 import { getCloudinaryUrl } from "../../../shared/services/cloudinary";
 import type { Service } from "../types/Service";
+import { motion } from "motion/react";
+import { fadeUp } from "../../../shared/animations/variants";
 
 
 interface ServiceCardProps {
@@ -12,7 +14,14 @@ export default function ServiceCard({
   onViewMore,
 }: ServiceCardProps) {
   return (
-    <article className="service-card">
+    <motion.article
+      variants={fadeUp}
+      whileHover={{
+        y: -8,
+        transition: { duration: 0.25, ease: "easeOut" },
+      }}
+      className="service-card"
+    >
       <div className="service-image-container">
         <img
           src={getCloudinaryUrl(service.publicId, 800)}
@@ -40,6 +49,6 @@ export default function ServiceCard({
           <span aria-hidden="true">→</span>
         </button>
       </div>
-    </article>
+    </motion.article>
   );
 }

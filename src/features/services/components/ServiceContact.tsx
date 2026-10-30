@@ -1,6 +1,16 @@
+import { motion } from "motion/react";
+import { fadeUp } from "../../../shared/animations/variants";
+
 export function ServiceContact() {
     return (
-        <section className="services-cta">
+        <motion.section
+            variants={fadeUp}
+            whileHover={{
+                y: -8,
+                transition: { duration: 0.25, ease: "easeOut" },
+            }}
+            className="services-cta"
+        >
             <div className="services-cta-content">
             <span className="services-eyebrow">PROYECTOS</span>
 
@@ -15,6 +25,6 @@ export function ServiceContact() {
                 Contactar
             </a>
             </div>
-        </section>
+        </motion.section>
     );
 }

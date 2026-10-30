@@ -5,13 +5,23 @@ import {
     FaEnvelope,
     FaMapMarkerAlt,
 } from "react-icons/fa";
+import { motion } from "motion/react";
+import { fadeUp, staggerContainer } from "../../../shared/animations/variants";
 
 export function Info() {
     return (
         <>
-            <section id="contact-information" className="contact-section">
+            <motion.section
+                variants={staggerContainer}
+                id="contact-information"
+                className="contact-section"
+            >
                 <div className="contact-container">
-                <div className="artist-card">
+                <motion.div
+                    variants={fadeUp}
+                    whileHover={{ y: -8, transition: { duration: 0.25, ease: "easeOut" } }}
+                    className="artist-card"
+                >
                     <div className="artist-card-header">
                     <div className="artist-logo-wrapper">
       
@@ -104,9 +114,13 @@ export function Info() {
                         </a>
                     </div>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className="artist-biography">
+                <motion.div
+                    variants={fadeUp}
+                    whileHover={{ y: -8, transition: { duration: 0.25, ease: "easeOut" } }}
+                    className="artist-biography"
+                >
                     <span className="section-eyebrow">SOBRE EL ARTISTA</span>
 
                     <h2>
@@ -157,9 +171,9 @@ export function Info() {
                         <span>Países con obras</span>
                     </div>
                     </div>
+                </motion.div>
                 </div>
-                </div>
-            </section>
+            </motion.section>
         </>
     );
 }

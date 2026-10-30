@@ -3,6 +3,8 @@ import { getCloudinaryUrl } from "../../../shared/services/cloudinary";
 import services from "../data/services.json";
 import { GalleryModal } from "../../../shared/components/GalleryModal";
 import type { Service } from "../types/Service";
+import { motion } from "motion/react";
+import { fadeUp, staggerContainer } from "../../../shared/animations/variants";
 
 
 export function Services() {
@@ -17,9 +19,20 @@ export function Services() {
                     Servicios
                 </h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <motion.div
+                    variants={staggerContainer}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.08 }}
+                    className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto"
+                >
                     {services.map((servicio) => (
-                    <div key={servicio.id} className="group relative rounded-2xl overflow-hidden shadow-2xl">
+                    <motion.article
+                        key={servicio.id}
+                        variants={fadeUp}
+                        whileHover={{ y: -8, transition: { duration: 0.25, ease: "easeOut" } }}
+                        className="group relative rounded-2xl overflow-hidden shadow-2xl"
+                    >
                         <div className="md:h-[28rem]">
                         <img
                             src={getCloudinaryUrl(servicio.imagenFondo, 800)}
@@ -39,9 +52,9 @@ export function Services() {
                             Ver más
                         </button>
                         </div>
-                    </div>
+                    </motion.article>
                     ))}
-                </div>
+                </motion.div>
                 </div>
             </section>
 

@@ -22,8 +22,8 @@ function setMeta(selector: string, attribute: string, content: string) {
 
 export default function SEO({ title, description, path, type = "website" }: SEOProps) {
   useEffect(() => {
-    const origin = window.location.origin;
-    const canonicalUrl = `${origin}${path}`;
+    const origin = "https://mariosuarezartstudio.online";
+    const canonicalUrl = `${origin}${path === "/" ? "" : path}`;
     document.documentElement.lang = "es";
     document.title = title;
 

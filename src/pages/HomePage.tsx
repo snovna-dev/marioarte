@@ -8,9 +8,10 @@ export function HomePage() {
   return (
     <div className="min-h-screen font-sans">
       <SEO
-        title="Mario Suarez Art Studio | Pintura, Escultura y Retratos"
+        title="Mario Suarez Art Studio | Retratos personalizados, pintura y escultura"
         description="Conoce la obra de Mario Suarez: retratos al carboncillo, pintura y escultura artística. Descubre piezas y encarga arte personalizado."
         path="/"
+        type="website"
       />
       <Home/>
       <Appreciations/>
